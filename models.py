@@ -50,10 +50,3 @@ class Produto(Base):
                 f"Ativo={self.ativo}, "
                 f"Estoque={self.estoque}, "
                 f"Categoria={self.categoria_id})")
-
-
-class Pessoa(Base):
-    __tablename__ = "pessoas"
-
-    id = (Column(Uuid(as_uuid=True), primary_key=True, default=uuid.uuid4))
-    nome = (Column(String, nullable=False))
