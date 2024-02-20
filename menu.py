@@ -11,7 +11,7 @@ def menu(opcoes, engine):
         console.rule("[bold red]Escolha uma opção")
         total_opcoes = len(opcoes)
         for opcao in enumerate(opcoes):
-            print(f"{opcao[0] + 1}: {opcao[1]["texto"]}")
+            print(f"{opcao[0] + 1}: {opcao[1]['texto']}")
         print(f"0: Sair")
 
         escolha = IntPrompt.ask("Escolha uma opção", default=0, show_default=True)
